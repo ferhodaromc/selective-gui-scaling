@@ -1,0 +1,17 @@
+mod.id = "selectiveguiscaling"
+mod.name = "Selective GUI Scaling"
+mod.group = "omarch.selectiveguiscaling.fabric"
+mod.version = "1.0.1"
+
+deps.fabric_loader = "0.19.5"
+loomx.loom_version = "1.17-SNAPSHOT"
+
+["26.3.x"]
+mod.mc_compat = "~26.3"
+mod.mc_releases = ["26.3"]
+deps.fabric_api = "0.160.0+26.3"
+
+["26.2.x"]
+mod.mc_compat = "~26.2"
+mod.mc_releases = ["26.2", "26.2.1", "26.2.2"]
+deps.fabric_api = "0.152.2+26.2"

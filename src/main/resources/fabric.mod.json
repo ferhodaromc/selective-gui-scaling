@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "selectiveguiscaling",
+	"version": "1.0.0",
+	"name": "Selective GUI Scaling",
+	"description": "Allows independent scaling of GUI elements (Hotbar, Crosshair, Chat) beyond the global GUI scale.",
+	"authors": [
+		"omarch"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/selectiveguiscaling/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"omarch.selectiveguiscaling.fabric.SelectiveGuiScaling"
+		],
+		"client": [
+			"omarch.selectiveguiscaling.fabric.SelectiveGuiScalingClient"
+		]
+	},
+	"mixins": [
+		"selectiveguiscaling.mixins.json",
+		{
+			"config": "selectiveguiscaling.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

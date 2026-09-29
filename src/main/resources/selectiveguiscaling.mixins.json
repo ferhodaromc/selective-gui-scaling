@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "omarch.selectiveguiscaling.fabric.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"SelectiveGuiScalingMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
